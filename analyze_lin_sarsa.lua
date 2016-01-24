@@ -1,7 +1,7 @@
 -- Analyze how LinSarsa does on BlackJack
 require 'rl'
 require 'BlackJackBoxSAFE'
-require 'constants'
+require 'BlackJack_constants'
 local as = require 'analyze_sarsa'
 
 local fe = BlackJackBoxSAFE()

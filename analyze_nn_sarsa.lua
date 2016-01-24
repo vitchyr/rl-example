@@ -1,7 +1,7 @@
 -- Analyze how NNSarsa does on BlackJack
 require 'rl'
 require 'BlackJackOneHotSAFE'
-require 'constants'
+require 'BlackJack_constants'
 local as = require 'analyze_sarsa'
 
 local fe = BlackJackOneHotSAFE()
