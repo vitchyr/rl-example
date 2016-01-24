@@ -22,9 +22,9 @@ the best action (z axis) to take is given a state (xy axis)A value of 1 means
 the player should "hit", and 2 means that the player should "stick".
 
 ![Best action plot based on Monte Carlo
-control](images/montecarlo_best_action_plot.png) "Best action action based on
+control](images/montecarlo_best_action_plot.png "Best action action based on
 Monte Carlo")
 
 The plot below shows the learned value of different states.  ![Value function
-plot based on Monte Carlo control](images/montecarlo_v_plot.png) "Value function
+plot based on Monte Carlo control](images/montecarlo_v_plot.png "Value function
 plot based on Monte Carlo")
