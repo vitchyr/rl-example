@@ -1,13 +1,16 @@
 require 'rl'
-require 'constants'
 require 'BlackJack'
 require 'BlackJackQVAnalyzer'
 
 -- Script for generating Q for Monte Carlo to save.
 local cmd = torch.CmdLine()
 cmd:option('-ni', 6, 'log_10(# of iterations)')
-cmd:option('-saveqto', DEFAULT_Q_MC_SAVE, 'save Q to this file if provided')
+cmd:option('-saveqto', '', 'save Q to this file if provided')
 local params = cmd:parse(arg)
+
+if params.saveqto == '' then
+    error('Must provide -saveqto [FILENAME] option')
+end
 
 local mdp = BlackJack()
 local discount_factor = 1
